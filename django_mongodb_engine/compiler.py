@@ -14,6 +14,8 @@ from django.utils.tree import Node
 
 from pymongo.errors import PyMongoError
 from pymongo import ASCENDING, DESCENDING
+
+#broken with pymongo 2.2 update
 try:
     from pymongo.objectid import ObjectId, InvalidId
 except ImportError:
